@@ -1,0 +1,175 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    background-color: rgba(0, 0, 0, 0.84);
+}
+
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:"nav"
+                        "header"
+                        "main"
+                        "footer";
+
+}
+
+
+.s1{
+    display: flex;
+    justify-self: center;
+    grid-area: header;
+    font-size: 23px;
+    width: 531px;
+    height: 80px;
+   
+    background: #5E5757;
+    border-radius: 102.5px;
+}
+
+h1{
+    padding: auto;
+    margin: 12px;
+    color: #ffffff;
+}
+.head{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.s2{
+    display: flex;
+    justify-self: center;
+    grid-area: main;
+    font-size: 30px;
+    background-color: #333439;
+    color:#Ffffff;
+    width: 945px;
+    height: 471px;
+   
+    background: #333439;    
+}
+
+
+.navbar{
+   
+    display: flex;
+    width: 600px;
+    height: 60px;
+    background-color: #cbcbcb;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  
+}
+
+.navbar ul{
+    list-style: none;
+    
+}
+
+
+.navbar ul li {
+    display: inline-block;
+    padding: 12px;
+    
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+a:hover{
+    color: #fff
+}
+
+
+section{
+    font-family: 'Questrial'
+}
+
+span{
+    font-size: 40px;
+    color: #000000;
+}
+
+
+nav{
+    border-radius: 5px;
+}
+
+
+.footer{
+    grid-area: footer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: fit-content;
+    width: fit-content;
+    
+    color: #Ffffff;
+}
+
+.s2text{
+    padding: 100px;
+}
+
+
+@media (max-width: 576px) {
+
+   .s1{
+        position: absolute;
+        left: 75px;
+        top: 130px;
+        width: 400px;
+        height: 100px;
+        text-align: center;
+        font-size: 17px;
+   }
+
+   .head{
+        width: 500px;
+        
+   }
+
+   .navbar{
+    position: absolute;
+    width: 500px;
+    left: 32px;
+   }
+
+    .navbar ul li a{
+        font-size: 22px;
+    }
+
+    .s2text{
+        font-size: 22px;
+        padding: 80px;
+        
+    }
+
+    .s2{
+        width: 500px;
+    }
+
+
+}
+
+    
+        
+     
+
+ 
+
+
